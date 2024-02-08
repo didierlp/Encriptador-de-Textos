@@ -1,0 +1,66 @@
+html{
+    background-image: url(/assets/pexels-madison-inouye-1382393.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 10px;
+}
+
+h1{
+    margin-top: 20px;
+    grid-column:2/4 ;
+    grid-row: 1;
+    text-align: center;
+    font-size: 40px;
+    color: rgb(81, 41, 81);
+    background-color: rgba(188, 177, 162, 0.81);
+}
+
+
+
+.input-texto{
+grid-column:2 / 4;
+grid-row: 2;
+font-size: 20px;
+
+}
+
+.btn-encriptar:hover{
+    opacity: 50%;
+}
+
+.btn-desencriptar:hover{
+    opacity: 50%;
+}
+
+.btn-encriptar{
+    background-color: rgba(184, 253, 230, 0.809);
+    border: 1px;
+    border-radius: 15px;
+    grid-column:2;
+    grid-row: 4;
+    font-size: 20px;
+
+}
+.btn-desencriptar{
+    background-color: rgba(184, 253, 230, 0.809);
+    border: 1px;
+    border-radius: 15px;
+    grid-column:3;
+    grid-row: 4;
+    font-size: 20px;
+}
+.output-texto{
+    background-color: rgba(188, 177, 162, 0.81);
+    color: #ffffff;
+    font-size: 30px;
+    grid-column:2/4;
+    grid-row: 6;
+}
